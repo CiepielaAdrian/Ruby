@@ -1,13 +1,12 @@
 <h1>Articles<h1>
-
+   
 <u1>
     <% @articles.each do |article| %>
         <li>
-        
              <%= link_to "Article.title", article_path(article) %>
              -
              <%= article.title %>
-             
-             </li>
+        </li>
     <% end %>
-</u1>
+<%= link_to 'nowy', new_article_path %>
+</u1>   
